@@ -11,20 +11,22 @@ namespace WebApi.Controllers;
 public class ApiQuizUserController : ControllerBase
 {
     private readonly IQuizUserService _service;
+    private readonly IMapper _mapper;
 
-    public ApiQuizUserController(IQuizUserService service)
+    public ApiQuizUserController(IQuizUserService service, IMapper mapper)
     {
         _service = service;
+        _mapper = mapper;
     }
 
     [Route("{id}")]
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status200OK)]
-    public ActionResult<Quiz> GetQuiz(int id)
+    public ActionResult<QuizDto> GetQuiz(int id)
     {
         var quiz = _service.FindQuizById(id);
-        return quiz == null ? NotFound() : Ok(quiz);
+        return quiz == null ? NotFound() : Ok(_mapper.Map<QuizDto>(quiz));
     }
 
     [Route("{quizId}/items/{itemId}/answers/{userId}")]
