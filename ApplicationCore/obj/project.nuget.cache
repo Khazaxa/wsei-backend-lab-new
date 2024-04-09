@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "hXm7KGarDJ8qKsLTT+G53ohEmZAOHf0EQ8yt+PXhpFHlLnXEDCOLYAJr4fnr5agcgLWvc0/UvuMB7wDA/s9LUg==",
+  "success": true,
+  "projectFilePath": "D:\\RiderSolutions\\wsei-backend-lab-new\\ApplicationCore\\ApplicationCore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kobbe\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\Kobbe\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\Kobbe\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
